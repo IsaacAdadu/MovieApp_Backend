@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace MovieApp_Backend.Services
 {
-	public class OmdbService
+	public class OmdbService:IOmdbService
 	{
 		private readonly HttpClient _httpClient;
 		private readonly string _apiKey = "ecd0cd0a";

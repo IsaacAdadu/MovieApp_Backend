@@ -10,7 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddHttpClient();
-builder.Services.AddScoped<OmdbService>();
+builder.Services.AddScoped<IOmdbService, OmdbService>();
 
 var app = builder.Build();
 
